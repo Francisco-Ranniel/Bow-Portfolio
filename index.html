@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bullet Francisco &amp; Videographer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">Bow<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#video">Film</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"    onclick="closeMobile()">About</a>
+    <a href="#work"     onclick="closeMobile()">Work</a>
+    <a href="#video"    onclick="closeMobile()">Film</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#contact"  onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Photography &amp; Videography</p>
+      <h1>
+        Capturing<br />
+        <em>moments</em> that<br />
+        last forever.
+      </h1>
+      <p class="hero-sub">Based in the Philippines &mdash; Available in the Philippines only.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Book a Session</a>
+      </div>
+    </div>
+    <div class="hero-frame">
+      <!-- Replace with your own hero/feature image -->
+      <img src="DSC04226.JPG" alt="Hero Image" class="hero-image" />
+        <div class="placeholder-inner">
+        </div>
+      <div class="hero-badge">
+        <span class="badge-num">50+</span>
+        <span class="badge-label">Projects Completed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Profile picture container -->
+        <div class="about-photo-wrap">
+          <div class="about-photo">
+            <img src="1x1 ko.jpg" alt="Description" />
+            <div class="profile-placeholder">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="15" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 36C4 28.3 11.2 22 20 22C28.8 22 36 28.3 36 36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <p>Your Photo</p>
+            </div>
+          </div>
+          <div class="about-photo-label">
+            <strong>Bullet Francisco</strong>
+            <span>Photographer &amp; Filmmaker</span>
+          </div>
+        </div>
+
+        <!-- Bio text -->
+        <div class="about-text">
+          <span class="label">About Me</span>
+          <h2>Telling stories<br /><em>through light.</em></h2>
+          <p>
+            Hi, I'm <strong>Bullet Francisco</strong> — a photographer and videographer based in the Philippines with a passion for capturing genuine, unscripted moments. Whether it's the quiet emotion of a portrait or the energy of an event, I believe every frame should feel alive.
+          </p>
+          <p>
+            With 4 years of experience across portraiture, events, commercial work, and short-form film, I bring a careful eye and an honest approach to every project.
+          </p>
+          <div class="about-stats">
+            <div class="astat">
+              <strong>4+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="astat">
+              <strong>50+</strong>
+              <span>Happy Clients</span>
+            </div>
+            <div class="astat">
+              <strong>50+</strong>
+              <span>Projects Done</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOGRAPHY WORK -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">Portfolio</span>
+        <h2>Photography</h2>
+        <p>A selection of stills across portraiture, events, and commercial work.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs">
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="portrait">Portrait</button>
+        <button class="tab" data-filter="event">Events</button>
+        <button class="tab" data-filter="landscape">Landscape</button>
+        <button class="tab" data-filter="commercial">Commercial</button>
+      </div>
+
+      <!-- Photo grid -->
+      <div class="photo-grid" id="photoGrid">
+
+        <div class="photo-item tall" data-cat="portrait">
+          <div class="photo-placeholder">
+            <div class="ph-content">
+              <img src="BOW06420.JPG" alt="Portrait Shot" />
+              <span class="ph-icon">📷</span>
+              <p>Portrait Shot</p>
+              <span></span>
+            </div>
+            <div class="ph-overlay">
+              <p class="ph-title">Portrait — Golden Hour</p>
+              <p class="ph-year">2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="event">
+          <div class="photo-placeholder">
+            <div class="ph-content">
+              <img src="BOW00803.JPG" alt="Event Coverage" />
+              <span class="ph-icon">📷</span>
+              <p>Event Coverage</p>
+              <span></span>
+            </div>
+            <div class="ph-overlay">
+              <p class="ph-title">Event — Wedding Ceremony</p>
+              <p class="ph-year">2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="landscape">
+          <div class="photo-placeholder">
+            <div class="ph-content">
+              <img src="BOW02687.JPG" alt="Landscape Photo" />
+              <span class="ph-icon">📷</span>
+              <p>Landscape</p>
+              <span></span>
+            </div>
+            <div class="ph-overlay">
+              <p class="ph-title">Landscape — Sunrise</p>
+              <p class="ph-year">2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item wide" data-cat="commercial">
+          <div class="photo-placeholder">
+            <img src="IMG_5282.JPG" alt="Commercial Shoot" />
+            <div class="ph-content">
+              <span class="ph-icon">📷</span>
+              <p>Commercial / Product</p>
+              <span></span>
+            </div>
+            <div class="ph-overlay">
+              <p class="ph-title">Commercial — Product Campaign</p>
+              <p class="ph-year">2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item tall" data-cat="portrait">
+          <div class="photo-placeholder">
+            <div class="ph-content">
+              <img src="BOW04903.JPG" alt="Portrait Shot" />
+              <span class="ph-icon">📷</span>
+              <p>Portrait</p>
+              <span></span>
+            </div>
+            <div class="ph-overlay">
+              <p class="ph-title">Portrait - Model</p>
+              <p class="ph-year">2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="event">
+          <div class="photo-placeholder">
+            <div class="ph-content">
+              <img src="BOW04849.JPG" alt="Event Coverage" />
+              <span class="ph-icon">📷</span>
+              <p>Event</p>
+              <span></span>
+            </div>
+            <div class="ph-overlay">
+              <p class="ph-title">Event — Bsketball Opening</p>
+              <p class="ph-year">2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="landscape">
+          <div class="photo-placeholder">
+            <div class="ph-content">
+              <img src="BOW01719.JPG" alt="Landscape Photo" />
+              <span class="ph-icon">📷</span>
+              <p>Landscape</p>
+              <span></span>
+            </div>
+            <div class="ph-overlay">
+              <p class="ph-title">Landscape — Ocean Blue</p>
+              <p class="ph-year">2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="commercial">
+          <div class="photo-placeholder">
+            <img src="Life could be dream-2.JPG" alt="Commercial Shoot" />
+            <div class="ph-content">
+              <span class="ph-icon">📷</span>
+              <p>Commercial</p>
+              <span></span>
+            </div>
+            <div class="ph-overlay">
+              <p class="ph-title">Commercial — Brand Shoot</p>
+              <p class="ph-year">2022</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO WORK -->
+  <section class="video-section" id="video">
+    <div class="container">
+      <div class="section-head light">
+        <span class="label">Film &amp; Video</span>
+        <h2>Videography</h2>
+        <p>Short films, event coverage, and branded content.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-item featured">
+          <div class="video-placeholder">
+            <video src="gatya.mp4" controls   style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+            </video>
+            <div class="video-meta">
+              <p class="video-title">Featured Film — [Project Title]</p>
+              <p class="video-info">Short Film &nbsp;•&nbsp; 2024 &nbsp;•&nbsp; 4:32</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-placeholder">
+            <video src="ASEY.mp4" controls   style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+            </video>
+            <div class="video-meta">
+              <p class="video-title">Event Highlight Reel</p>
+              <p class="video-info">Events &nbsp;•&nbsp; 2024 &nbsp;•&nbsp; 2:15</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-placeholder">
+            <video src="bow 1.mp4" controls  style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+            </video>
+            <div class="video-meta">
+              <p class="video-title">Brand Story — [Client]</p>
+              <p class="video-info">Commercial &nbsp;•&nbsp; 2023 &nbsp;•&nbsp; 1:45</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-placeholder">
+            <video src="CROP SHIRT.mp4" controls   style="width:100%; height:100%; object-fit:cover; border-radius:12px;"></video>
+            <div class="video-meta">
+              <p class="video-title">Wedding Film</p>
+              <p class="video-info">Wedding &nbsp;•&nbsp; 2023 &nbsp;•&nbsp; 5:00</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">What I Offer</span>
+        <h2>Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Portrait &amp; Editorial</h3>
+          <p>Individual, couple, and family portraits. Studio or location. Natural light or flash.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Events &amp; Weddings</h3>
+          <p>Full coverage of weddings, debuts, corporate events, and celebrations — photo and video.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Commercial &amp; Branding</h3>
+          <p>Product photography, brand shoots, social media content, and lookbook production.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>Short Film &amp; Documentary</h3>
+          <p>Narrative short films, travel docs, and mini-documentaries from concept to final cut.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <span class="label">Let's Connect</span>
+          <h2>Ready to<br /><em>shoot?</em></h2>
+          <p>Have a project in mind? Let's talk. I'd love to hear what you're working on.</p>
+          <div class="contact-details">
+            <div class="cd-item">
+              <span class="cd-icon">✉</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:bulletfrancisco28@email.com">bulletfrancisco28@email.com</a>
+              </div>
+            </div>
+            <div class="cd-item">
+              <span class="cd-icon">📱</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+639564477718">+63 956 447 7718</a>
+              </div>
+            </div>
+            <div class="cd-item">
+              <span class="cd-icon">📍</span>
+              <div>
+                <strong>Based in</strong>
+                <span>Philippines</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-row">
+            <a href="https://www.instagram.com/bowvsworld/" class="social-link">Instagram</a>
+            <a href="https://www.facebook.com/share/18MgrTmzmw/" class="social-link">Facebook</a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="cform" onsubmit="handleForm(event)">
+            <div class="cform-row">
+              <div class="cform-group">
+                <label>Name</label>
+                <input type="text" placeholder="Juan dela Cruz" required />
+              </div>
+              <div class="cform-group">
+                <label>Email</label>
+                <input type="email" placeholder="juan@email.com" required />
+              </div>
+            </div>
+            <div class="cform-group">
+              <label>Type of Project</label>
+              <select>
+                <option value="">Select a service...</option>
+                <option>Portrait / Editorial</option>
+                <option>Wedding / Debut</option>
+                <option>Event Coverage</option>
+                <option>Commercial / Branding</option>
+                <option>Short Film</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="cform-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Tell me about your project, date, and location..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full">Send Inquiry</button>
+            <p class="form-msg" id="formMsg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <p class="footer-logo">Bow.<span class="dot">.</span></p>
+        <p class="footer-copy">© 2025 Bulletfrancisco. All rights reserved.</p>
+        <p class="footer-made">Photography &amp; Videography Portfolio</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
